@@ -8,7 +8,7 @@
  This is a weather dashboard that provides current weather information and a 5-day forecast for any city entered by the user.
 
 ## Interface of the project / Demo
-You can view the live demo of the project [here](https://github.com/kashan-code/Simple-Weather-Dashboard.git).
+You can view the live demo of the project [here](https://github.com/aawaisakbarmalik/Web_Assignment_Weather.git).
 
 
  ## Features
@@ -24,7 +24,7 @@ You can view the live demo of the project [here](https://github.com/kashan-code/
  2-CSS
  3-JAVASCRIPT
  4-OpenWeather API
- 5-Geolocation Api
+
 
  ## Instructions to Run Locally
  1-Clone the repository:
