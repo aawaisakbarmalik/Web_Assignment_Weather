@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="task.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with navigation -->
+        <aside class="side-menu">
+            <div class="logo">Weather App</div>
+            <nav>
+                <a href="#">Dashboard</a>
+                <a href="#">Tables</a>
+            </nav>
+        </aside>
+
+        <!-- Main content section -->
+        <main>
+            <!-- Weather widget for displaying current weather -->
+            <section class="weather-widget">
+                <h2>Weather in <span id="city-name">City</span></h2>
+                <div class="weather-info">
+                    <p>Temperature: <span id="temperature"></span>°C</p>
+                    <p>Weather: <span id="weather-description"></span></p>
+                </div>
+            </section>
+
+            <!-- Chatbot for city search -->
+            <section class="chatbot">
+                <h3>Enter City</h3>
+                <input type="text" id="user-input" placeholder="City">
+                <button id="ask-btn">Search</button>
+                <div id="chatbot-response"></div>
+            </section>
+            <br/>
+            <!-- Forecast container where 5-day forecast will be printed -->
+            <section id="forecast-container"></section>
+            
+            <!-- Section for displaying forecast charts -->
+            <section class="charts">
+                <canvas id="temp-chart" width="400" height="200"></canvas>
+                <canvas id="weather-chart" width="400" height="200"></canvas>
+                <canvas id="temp-line-chart" width="400" height="200"></canvas>
+                <canvas id="temp-doughnut-chart" width="15" height="100"></canvas>
+            </section>
+        </main>
+    </div>
+
+    <!-- External JavaScript file for fetching and rendering weather data -->
+    <script src="2.js"></script>
+</body>
+</html>
